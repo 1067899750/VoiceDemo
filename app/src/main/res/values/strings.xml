@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">VoiceDemo</string>
+
+    <string name="app_id">5a7275c8</string>
+    <string name="title_vocal_idf">声纹1:N检索示例</string>
+</resources>

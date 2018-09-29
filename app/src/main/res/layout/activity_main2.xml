@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+
+    tools:context="com.example.bearhunting.voicedemo.Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="用户ID:"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/set_authId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入 authId"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/edt_result"
+        style="@style/textStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/radioText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" 文本密码"
+                android:checked="true"
+                android:textSize="18sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioFree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="自由说"
+                android:checked="false"
+                android:textSize="18sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="数字密码"
+                android:checked="false"
+                android:textSize="18sp"></RadioButton>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/isv_getpassword"
+            style="@style/textStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="获取密码" />
+
+        <Button
+            android:id="@+id/isv_search"
+            style="@style/textStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查询模型" />
+
+        <Button
+            android:id="@+id/isv_delete"
+            style="@style/textStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除模型" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/isv_reocrd"
+            style="@style/textStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始录音" />
+
+        <Button
+            android:id="@+id/isv_identity"
+            style="@style/textStyle"
+            android:layout_width="0.1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="验证" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/error_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:background="@android:color/white" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
